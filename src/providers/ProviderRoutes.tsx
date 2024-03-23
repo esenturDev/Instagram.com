@@ -1,12 +1,27 @@
-import { FC, ReactNode } from "react"
+import { FC, ReactNode, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router";
 
 type ProviderRoutesProps = {
-  children: ReactNode;
-}
+	children: ReactNode;
+};
 
-const ProviderRoutes: FC<ProviderRoutesProps> = ({children}) => {
-  
-  return children
-}
+const ProviderRoutes: FC<ProviderRoutesProps> = ({ children }) => {
+	const { pathname } = useLocation();
+	const navigate = useNavigate();
 
-export default ProviderRoutes
+	const isAuth = localStorage.getItem("auth");
+	const isAuthResult = !!isAuth;
+
+	useEffect(() => {
+		if (isAuthResult && pathname === "/login") {
+			navigate("/");
+		} else if (isAuthResult && pathname === "/register") {
+			navigate("/");
+		} else if (!isAuthResult && pathname === "/") {
+			navigate("/login");
+		}
+	}, [pathname]);
+	return children;
+};
+
+export default ProviderRoutes;
