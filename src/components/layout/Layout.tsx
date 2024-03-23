@@ -11,8 +11,11 @@ import { Message } from "../pages/Message";
 import Search from "../pages/Search";
 import { Interesting } from "../pages/Interesting";
 import { AddedPost } from "../pages/AddedPost";
+import { useState } from "react";
+import { Settings } from "../pages/Settings";
 
 const Layout = () => {
+	const [layoutBekColor, setLayoutBekColor] = useState<string>("");
 	const { pathname } = useLocation();
 	if (pathname === "/login") {
 		return (
@@ -39,6 +42,7 @@ const Layout = () => {
 					<Route path="/Search" element={<Search />} />
 					<Route path="/Interesting" element={<Interesting />} />
 					<Route path="/addedPost" element={<AddedPost />} />
+					<Route path="/Settings" element={<Settings />} />
 				</Routes>
 			</main>
 			<Footer />
