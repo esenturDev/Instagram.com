@@ -33,6 +33,7 @@ const Layout = () => {
 	return (
 		<div className={scss.layout}>
 			<Header />
+			<iframe src="https://www.instagram.com/reel/C4s17CuNTN0/?utm_source=ig_web_copy_link"></iframe>
 			<main>
 				<Routes>
 					<Route path="/" element={<Home />} />
