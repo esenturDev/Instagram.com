@@ -67,6 +67,9 @@ export const LoginPages = () => {
 						</div>
 					</div>
 				</div>
+        <div className={scss.forms2}>
+
+        </div>
 			</div>
 		</div>
 	);

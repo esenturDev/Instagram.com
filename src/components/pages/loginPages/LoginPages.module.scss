@@ -25,7 +25,8 @@
 			box-shadow: 0px 0px 4px black;
 			align-items: center;
 			gap: 5rem;
-			height: 400px;
+			// height: 400px;
+			height: auto;
 			width: 285px;
 			i {
 				color: black;
@@ -84,6 +85,7 @@
 					// width: 255px;
 					background-color: transparent;
 					box-shadow: 0px 0px 2px black;
+					cursor: pointer;
 					// :185px ;
 					img {
 						width: 25px;
@@ -102,9 +104,18 @@
 					font-weight: 350;
 					font-size: 12px;
 					text-align: center;
-          cursor: pointer;
+					cursor: pointer;
 				}
 			}
 		}
+	}
+	.forms2 {
+		display: flex;
+		// justify-content: ;
+		align-items: center;
+		// gap: rem;
+    gap: 7px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px black;
 	}
 }
