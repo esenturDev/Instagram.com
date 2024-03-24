@@ -63,13 +63,16 @@ export const LoginPages = () => {
 								<img src={icon} alt="icon is Facebook" />
 								<span>Войти через Facebook</span>
 							</button>
-              <p className={scss.p}>Забыли пароль?</p>
+							<p className={scss.p}>Забыли пароль?</p>
 						</div>
 					</div>
 				</div>
-        <div className={scss.forms2}>
-
-        </div>
+				<div className={scss.forms2}>
+					<div className={scss.divContents2}>
+						<p>У вас ещё нет аккаунта?</p>
+						<span onClick={() => navigate("/register")}>Зарегистрироваться</span>
+					</div>
+				</div>
 			</div>
 		</div>
 	);

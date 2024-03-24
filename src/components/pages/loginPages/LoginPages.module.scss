@@ -114,8 +114,32 @@
 		// justify-content: ;
 		align-items: center;
 		// gap: rem;
-    gap: 7px;
-    border-radius: 7px;
-    box-shadow: 0px 0px 4px black;
+		position: relative;
+		left: 158px;
+		gap: 15px;
+		top: -160px;
+
+		flex-direction: column;
+		.divContents2 {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+			height: auto;
+			width: 285px;
+			padding-block: 1.5rem;
+			padding-inline: 1rem;
+			border-radius: 8px;
+			box-shadow: 0px 0px 4px black;
+			p {
+				color: black;
+				font-weight: 400;
+				font-size: 14px;
+			}
+			span {
+				color: rgb(50, 50, 243);
+				font-weight: 400;
+				font-size: 14px;
+			}
+		}
 	}
 }
