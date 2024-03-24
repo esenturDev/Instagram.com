@@ -141,5 +141,23 @@
 				font-size: 14px;
 			}
 		}
+		h3 {
+			color: black;
+			font-weight: 400;
+			font-size: 15px;
+			text-align: center;
+		}
+		.divButtons {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 14px;
+			.buttonPhoto {
+				img {
+					width: 100px;
+					height: auto;
+				}
+			}
+		}
 	}
 }

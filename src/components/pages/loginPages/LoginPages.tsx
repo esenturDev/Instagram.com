@@ -70,7 +70,19 @@ export const LoginPages = () => {
 				<div className={scss.forms2}>
 					<div className={scss.divContents2}>
 						<p>У вас ещё нет аккаунта?</p>
-						<span onClick={() => navigate("/register")}>Зарегистрироваться</span>
+						<span onClick={() => navigate("/register")}>
+							Зарегистрироваться
+						</span>
+					</div>
+					<h3>Установите приложение.</h3>
+					<div className={scss.divButtons}>
+						<button className={scss.buttonPhoto}>
+							<img
+								src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png"
+								alt=""
+							/>
+						</button>
+						<button className={scss.buttonPhoto}></button>
 					</div>
 				</div>
 			</div>
