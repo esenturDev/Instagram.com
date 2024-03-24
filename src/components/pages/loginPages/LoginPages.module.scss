@@ -52,10 +52,57 @@
 				button {
 					background-color: rgb(50, 50, 243);
 					color: aliceblue;
-          font-weight: 500;
-          font-size: 17px;
-          border-radius: 8px;
-          border: none;
+					font-weight: 500;
+					font-size: 14px;
+					border-radius: 8px;
+					border: none;
+					height: 28px;
+				}
+				.and {
+					display: flex;
+					justify-content: space-evenly;
+					align-items: center;
+					div {
+						width: 75px;
+						height: 0.5px;
+						border: 0.5px solid rgb(110, 107, 107);
+						// box-shadow: 0px 0px 2px black;
+					}
+					p {
+						color: rgb(24, 22, 22);
+						font-weight: 500;
+						font-size: 14px;
+					}
+				}
+				.buttonIcon {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					gap: 1.2rem;
+					padding-block: 0.6rem;
+					// padding-inline: 4rem;
+					// width: 255px;
+					background-color: transparent;
+					box-shadow: 0px 0px 2px black;
+					// :185px ;
+					img {
+						width: 25px;
+						height: 25px;
+						// background-color: rgb(50, 50, 243);
+						// color: rgb(50, 50, 243);
+					}
+					span {
+						color: rgb(50, 50, 243);
+						font-weight: 400;
+						font-size: 12px;
+					}
+				}
+				.p {
+					color: black;
+					font-weight: 350;
+					font-size: 12px;
+					text-align: center;
+          cursor: pointer;
 				}
 			}
 		}

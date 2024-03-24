@@ -3,6 +3,7 @@ import scss from "./LoginPages.module.scss";
 import { useGetUsersQuery } from "../../../redux/api/auth";
 import { useState } from "react";
 import logo from "../../..//assets/photos/screenshot2.png";
+import icon from "../../../assets/facebook-circle-fill.svg";
 export const LoginPages = () => {
 	const { data } = useGetUsersQuery();
 	// const [postLogin] =  usePostLoginMutation();
@@ -53,6 +54,16 @@ export const LoginPages = () => {
 							/>
 							<button onClick={handleLogin}>Login</button>
 							{/* <button onClick={() => navigate("/register")}>Register</button> */}
+							<div className={scss.and}>
+								<div></div>
+								<p>ИЛИ</p>
+								<div></div>
+							</div>
+							<button className={scss.buttonIcon}>
+								<img src={icon} alt="icon is Facebook" />
+								<span>Войти через Facebook</span>
+							</button>
+              <p className={scss.p}>Забыли пароль?</p>
 						</div>
 					</div>
 				</div>
