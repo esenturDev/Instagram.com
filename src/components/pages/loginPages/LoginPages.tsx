@@ -2,7 +2,7 @@ import { useNavigate } from "react-router";
 import scss from "./LoginPages.module.scss";
 import { useGetUsersQuery } from "../../../redux/api/auth";
 import { useState } from "react";
-import logo from '../../..//assets/photos/screenshot2.png'
+import logo from "../../..//assets/photos/screenshot2.png";
 export const LoginPages = () => {
 	const { data } = useGetUsersQuery();
 	// const [postLogin] =  usePostLoginMutation();
@@ -37,18 +37,21 @@ export const LoginPages = () => {
 						<img src={logo} alt="logo photo loginPages" />
 					</div>
 					<div className={scss.forms}>
-						<input
-							type="email"
-							value={email}
-							onChange={(e) => setEmail(e.target.value)}
-							placeholder="email"
-						/>
-						<input
-							type="password"
-							value={password}
-							onChange={(e) => setPassword(e.target.value)}
-							placeholder="password"
-						/>
+						<i>Instagram</i>
+						<div>
+							<input
+								type="email"
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
+								placeholder="email"
+							/>
+							<input
+								type="password"
+								value={password}
+								onChange={(e) => setPassword(e.target.value)}
+								placeholder="password"
+							/>
+						</div>
 						<button onClick={handleLogin}>Login</button>
 						<button onClick={() => navigate("/register")}>Register</button>
 					</div>
