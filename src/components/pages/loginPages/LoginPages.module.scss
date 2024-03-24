@@ -19,18 +19,44 @@
 		.forms {
 			display: flex;
 			flex-direction: column;
-			padding-block: 2.5rem;
-			padding-inline: 2rem;
+			padding-block: 2rem;
+			padding-inline: 1rem;
 			border-radius: 8px;
 			box-shadow: 0px 0px 4px black;
 			align-items: center;
 			gap: 5rem;
-			height: 535px;
+			height: 400px;
 			width: 285px;
 			i {
 				color: black;
 				font-size: 1.5rem;
 				font-weight: 700;
+			}
+			.inputsDiv {
+				display: flex;
+				flex-direction: column;
+				gap: 0.6rem;
+				input {
+					// width: 100%;
+					width: 220px;
+					padding-left: 11px;
+					height: 1.9rem;
+					border-radius: 5px;
+					background-color: aliceblue;
+					box-shadow: 0px 0px 3px rgb(26, 25, 25);
+					color: rgb(23, 21, 21);
+					border: none;
+					font-size: 15px;
+					font-weight: 400;
+				}
+				button {
+					background-color: rgb(50, 50, 243);
+					color: aliceblue;
+          font-weight: 500;
+          font-size: 17px;
+          border-radius: 8px;
+          border: none;
+				}
 			}
 		}
 	}

@@ -38,7 +38,7 @@ export const LoginPages = () => {
 					</div>
 					<div className={scss.forms}>
 						<i>Instagram</i>
-						<div>
+						<div className={scss.inputsDiv}>
 							<input
 								type="email"
 								value={email}
@@ -51,9 +51,9 @@ export const LoginPages = () => {
 								onChange={(e) => setPassword(e.target.value)}
 								placeholder="password"
 							/>
+							<button onClick={handleLogin}>Login</button>
+							{/* <button onClick={() => navigate("/register")}>Register</button> */}
 						</div>
-						<button onClick={handleLogin}>Login</button>
-						<button onClick={() => navigate("/register")}>Register</button>
 					</div>
 				</div>
 			</div>
