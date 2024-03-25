@@ -42,6 +42,7 @@ const RegisterPages = () => {
 							<div></div>
 						</div>
 						<div className={scss.inputs}>
+							<input type="text" placeholder="Моб, телефон или эл. адрес" />
 							<input
 								type="email"
 								value={email}
@@ -78,6 +79,17 @@ const RegisterPages = () => {
 						</p>
 					</div>
 					<h3>Установите приложение.</h3>
+					<div className={scss.divButtons}>
+						<img
+							src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png"
+							alt=""
+						/>
+						<img
+							className={scss.img}
+							src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png"
+							alt=""
+						/>
+					</div>
 				</div>
 			</div>
 		</div>
