@@ -72,6 +72,12 @@ const RegisterPages = () => {
 							{/* <button onClick={() => navigate("/login")}>Login</button> */}
 						</div>
 					</div>
+					<div className={scss.forms2Div}>
+						<p>
+							Есть аккаунт? <span onClick={() => navigate("/login")}>Вход</span>
+						</p>
+					</div>
+					<h3>Установите приложение.</h3>
 				</div>
 			</div>
 		</div>

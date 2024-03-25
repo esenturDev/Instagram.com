@@ -4,11 +4,13 @@
 	background-color: aliceblue;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: start;
+	padding-block: 2rem;
 	.content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: 1rem;
 		.forms {
 			display: flex;
 			flex-direction: column;
@@ -19,7 +21,7 @@
 			align-items: center;
 			gap: 12px;
 			height: auto;
-			width: 315px;
+			width: 285px;
 			i {
 				color: black;
 				font-size: 1.5rem;
@@ -79,6 +81,69 @@
 					font-size: 14px;
 				}
 			}
+			.inputs {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 0.6rem;
+				input {
+					// width: 100%;
+					width: 220px;
+					padding-left: 11px;
+					height: 1.9rem;
+					border-radius: 5px;
+					background-color: aliceblue;
+					box-shadow: 0px 0px 3px rgb(26, 25, 25);
+					color: rgb(23, 21, 21);
+					border: none;
+					font-size: 15px;
+					font-weight: 400;
+				}
+				button {
+					background-color: rgb(50, 50, 243);
+					color: aliceblue;
+					font-weight: 500;
+					font-size: 14px;
+					border-radius: 8px;
+					border: none;
+					width: 80%;
+					height: 28px;
+				}
+				p {
+					color: rgb(74, 71, 71);
+					text-align: center;
+					font-weight: 250;
+					font-size: 10px;
+				}
+			}
+		}
+		.forms2Div {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: auto;
+			width: 285px;
+			padding-block: 1.3rem;
+			box-shadow: 0px 0px 4px black;
+			padding-inline: 1rem;
+			border-radius: 8px;
+			gap: 10px;
+			p {
+				color: rgb(30, 29, 29);
+				font-weight: 400;
+				font-size: 13px;
+				span {
+					color: rgb(48, 48, 235);
+					font-weight: 400;
+					font-size: 13px;
+				}
+			}
+		}
+		h3 {
+			text-align: center;
+			color: rgb(30, 29, 29);
+			font-weight: 400;
+			font-size: 13px;
 		}
 	}
 }
