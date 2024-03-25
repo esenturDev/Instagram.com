@@ -76,13 +76,14 @@ export const LoginPages = () => {
 					</div>
 					<h3>Установите приложение.</h3>
 					<div className={scss.divButtons}>
-						<button className={scss.buttonPhoto}>
-							<img
-								src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png"
-								alt=""
-							/>
-						</button>
-						<button className={scss.buttonPhoto}></button>
+						<img
+							src="https://static.cdninstagram.com/rsrc.php/v3/yr/r/fDjwyLC88oO.png"
+							alt=""
+						/>
+						<img className={scss.img}
+							src="https://static.cdninstagram.com/rsrc.php/v3/yv/r/_UbeIRgTpG-.png"
+							alt=""
+						/>
 					</div>
 				</div>
 			</div>

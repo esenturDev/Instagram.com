@@ -115,9 +115,10 @@
 		align-items: center;
 		// gap: rem;
 		position: relative;
-		left: 158px;
+		left: 682px;
 		gap: 15px;
 		top: -160px;
+		width: 400px;
 
 		flex-direction: column;
 		.divContents2 {
@@ -151,12 +152,16 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			gap: 14px;
-			.buttonPhoto {
-				img {
-					width: 100px;
-					height: auto;
-				}
+			gap: 10px;
+			img {
+				width: 100%;
+				max-width: 120px;
+				height: auto;
+			}
+			.img {
+				width: 100%;
+				max-width: 100px;
+				height: auto;
 			}
 		}
 	}
