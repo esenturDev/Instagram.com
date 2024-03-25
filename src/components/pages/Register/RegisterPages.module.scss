@@ -12,14 +12,73 @@
 		.forms {
 			display: flex;
 			flex-direction: column;
-			padding-block: 2rem;
+			padding-block: 1.3rem;
 			padding-inline: 1rem;
 			border-radius: 8px;
 			box-shadow: 0px 0px 4px black;
 			align-items: center;
-			gap: 5rem;
+			gap: 12px;
 			height: auto;
-			width: 285px;
+			width: 315px;
+			i {
+				color: black;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+			.textsDiv {
+				p {
+					text-align: center;
+					color: rgb(65, 58, 58);
+					font-weight: 550;
+					font-size: 12px;
+				}
+			}
+			.buttonIcon {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1.2rem;
+				padding-block: 5px;
+
+				// padding-inline: 4rem;
+				width: 230px;
+				background-color: transparent;
+				// box-shadow: 0px 0px 2px black;
+				border-radius: 6px;
+				border: none;
+				background-color: rgb(87, 87, 247);
+				padding-inline: 1.5rem;
+				cursor: pointer;
+				// :185px ;
+				img {
+					width: 23px;
+					height: 23px;
+					// background-color: rgb(50, 50, 243);
+					// color: rgb(50, 50, 243);
+				}
+				span {
+					color: #fff;
+					font-weight: 600;
+					font-size: 12px;
+				}
+			}
+			.and {
+				display: flex;
+				// justify-content: space-evenly;
+				gap: 0.7rem;
+				align-items: center;
+				div {
+					width: 75px;
+					height: 0.5px;
+					border: 0.5px solid rgb(110, 107, 107);
+					// box-shadow: 0px 0px 2px black;
+				}
+				p {
+					color: rgb(24, 22, 22);
+					font-weight: 500;
+					font-size: 14px;
+				}
+			}
 		}
 	}
 }
